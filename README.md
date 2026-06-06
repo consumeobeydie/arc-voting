@@ -1,66 +1,30 @@
-## Foundry
+# Voting - Arc Testnet
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A smart contract for creating proposals, voting and finalizing results on-chain, deployed on Arc Testnet using Foundry.
 
-Foundry consists of:
+## Contract Details
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+- **Network:** Arc Testnet
+- **Contract Address:** 0xccEDE5e65e29616a5F6E3b93B71011896a8C66F2
+- **Deployer:** 0x54b4B44749a95070560509B6Ec0be501665CcF63
+- **Transaction Hash:** 0xbc3ad56effc41dd9f4c2b568275da5987fa2cd525dbff994bb136b5333a91748
 
-## Documentation
+## Features
 
-https://book.getfoundry.sh/
+- Create proposals with title, description and deadline
+- Vote for or against proposals
+- Finalize proposals after deadline (Passed/Rejected/Expired)
+- Prevent double voting
+- Built with Foundry and Solidity ^0.8.30
 
-## Usage
+## Getting Started
 
-### Build
-
-```shell
-$ forge build
+```bash
+forge install
+forge test
+forge build
 ```
 
-### Test
+## Explorer
 
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+[View on Arc Testnet Explorer](https://testnet.arcscan.app/address/0xccEDE5e65e29616a5F6E3b93B71011896a8C66F2)
